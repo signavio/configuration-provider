@@ -1,4 +1,4 @@
-package com.signavio.config.spi;
+package com.signavio.config;
 
 import java.util.Map;
 

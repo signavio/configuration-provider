@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>config</artifactId>
+        <groupId>com.signavio</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>config-provider</artifactId>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <scm>
+        <connection>scm:git@github.com:signavio/configuration-provider.git</connection>
+        <developerConnection>scm:git@github.com:signavio/configuration-provider.git</developerConnection>
+        <url>https://github.com/signavio/configuration-provider</url>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/signavio/configuration-provider/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>signavio-releases</id>
+            <url>http://nexus.dev.signavio.com:8081/repository/maven-public/</url>
+        </repository>
+    </distributionManagement>
+</project>
