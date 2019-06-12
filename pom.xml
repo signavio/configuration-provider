@@ -32,4 +32,21 @@
             </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <connection>scm:git@github.com:signavio/configuration-provider.git</connection>
+        <developerConnection>scm:git@github.com:signavio/configuration-provider.git</developerConnection>
+        <url>https://github.com/signavio/configuration-provider</url>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/signavio/configuration-provider/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>signavio-releases</id>
+            <url>http://nexus.dev.signavio.com:8081/repository/maven-public/</url>
+        </repository>
+    </distributionManagement>
 </project>
