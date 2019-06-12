@@ -44,8 +44,9 @@
 
     <distributionManagement>
         <repository>
-            <id>signavio-releases</id>
-            <url>http://nexus.dev.signavio.com:8081/repository/maven-public/</url>
+            <id>central</id>
+            <name>signavio-releases</name>
+            <url>https://signavio.artifactoryonline.com/signavio/public</url>
         </repository>
     </distributionManagement>
 </project>
