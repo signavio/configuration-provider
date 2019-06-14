@@ -44,9 +44,9 @@
 
     <distributionManagement>
         <repository>
-            <id>central</id>
+            <id>signavio-releases</id>
             <name>signavio-releases</name>
-            <url>https://signavio.artifactoryonline.com/signavio/public</url>
+            <url>https://signavio.artifactoryonline.com/signavio/libs-release-local</url>
         </repository>
     </distributionManagement>
 </project>
