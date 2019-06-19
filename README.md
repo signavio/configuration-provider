@@ -54,6 +54,6 @@ com.signavio.config.ExampleConfigProvider
 
 ## How to deploy it
 
-The generated implementation has to be packed as a `jar` file and copied under Tomcat's `webapps/ROOT/lib` directory. # TODO specified
+The generated implementation has to be packed as a `jar` file and copied under `$TOMCAT_HOME/webapps/ROOT/lib` directory.
 
 After that, the application has to be restarted in order for the new configuration service to be applied.
