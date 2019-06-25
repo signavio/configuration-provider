@@ -6,13 +6,33 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
+        <groupId>com.signavio.workflow</groupId>
         <artifactId>config</artifactId>
-        <groupId>com.signavio</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>config-provider</artifactId>
     <packaging>jar</packaging>
+
+    <name>Config Provider</name>
+    <description>Service Provider Interface (SPI) to define configuration.</description>
+    <url>https://github.com/signavio/configuration-provider</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Wolfpack</name>
+            <email>wolf.pack@signavio.com</email>
+            <organization>Signavio</organization>
+            <organizationUrl>https://www.signavio.com/</organizationUrl>
+        </developer>
+    </developers>
 
     <build>
         <plugins>
@@ -29,13 +49,40 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadoc</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
     <scm>
         <connection>scm:git@github.com:signavio/configuration-provider.git</connection>
         <developerConnection>scm:git@github.com:signavio/configuration-provider.git</developerConnection>
-        <url>https://github.com/signavio/configuration-provider</url>
+        <url>https://github.com/signavio/configuration-provider/tree/master</url>
     </scm>
 
     <issueManagement>
@@ -43,10 +90,13 @@
     </issueManagement>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
         <repository>
-            <id>signavio-releases</id>
-            <name>signavio-releases</name>
-            <url>https://signavio.artifactoryonline.com/signavio/libs-release-local</url>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
 </project>
