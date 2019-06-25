@@ -11,7 +11,7 @@ This allows a [Service Loader](https://docs.oracle.com/javase/7/docs/api/java/ut
 ## How to implement it
 
 The custom configuration service provider has to implement the interface `ConfigurationProvider`.
-The dependency library can be found [here](https://lmgtfy.com/?q=com.signavio.config-provider) #TODO provide link to maven central repo
+The dependency library can be found [here](https://search.maven.org/artifact/com.signavio.workflow/config-provider)
 
 ## Implementation reference example
 
@@ -20,7 +20,7 @@ Add the dependency to your project.
 Maven example:
 ```
 <dependency>
-    <groupId>com.signavio</groupId>
+    <groupId>com.signavio.workflow</groupId>
     <artifactId>config-provider</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -28,7 +28,7 @@ Maven example:
 
 Create a class that implements `ConfigurationProvider` and overrides the method `Map<String, String> get()`.
 
-_src/main/java/com/signavio/config/ExampleConfigProvider.java_
+_src/main/java/com/signavio/workflow/config/ExampleConfigProvider.java_
 ```java
 public class ExampleConfigProvider implements ConfigurationProvider {
 
@@ -47,9 +47,9 @@ The service provider has to include a file under `META-INF/services`.
 The file name should be the fully qualified service name without any extension.
 Inside the file the provider has to specify the fully qualified implementation.
 
-_src/main/resources/META-INF/services/com.signavio.config.ConfigurationProvider_
+_src/main/resources/META-INF/services/com.signavio.workflow.config.ConfigurationProvider_
 ```
-com.signavio.config.ExampleConfigProvider
+com.signavio.workflow.config.ExampleConfigProvider
 ```
 
 ## How to deploy it

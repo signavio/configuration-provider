@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.signavio</groupId>
+        <groupId>com.signavio.workflow</groupId>
         <artifactId>config</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>reference-impl</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.signavio</groupId>
+            <groupId>com.signavio.workflow</groupId>
             <artifactId>config-provider</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

@@ -1,4 +1,4 @@
-package com.signavio.config;
+package com.signavio.workflow.config;
 
 import java.util.Map;
 
