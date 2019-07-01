@@ -7,10 +7,14 @@
     <parent>
         <groupId>com.signavio.workflow</groupId>
         <artifactId>config</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
     </parent>
 
-    <artifactId>reference-impl</artifactId>
+    <artifactId>config-provider-ref-impl</artifactId>
+
+    <name>Config Provider Reference Implementation</name>
+    <description>An example of how to implement the Configuration Provider.</description>
+    <url>https://github.com/signavio/configuration-provider</url>
 
     <dependencies>
         <dependency>
@@ -19,4 +23,25 @@
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
