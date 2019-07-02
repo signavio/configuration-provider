@@ -22,7 +22,7 @@ Maven example:
 <dependency>
     <groupId>com.signavio.workflow</groupId>
     <artifactId>config-provider</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
